@@ -61,7 +61,13 @@ sudo apt-get -f install
 sudo apt-get install sqlitebrowser
 sudo snap install redis-desktop-manager
 wget https://download-test.robomongo.org/linux/robo3t-1.3.1-linux-x86_64-7419c406.tar.gz
+tar -zxvf geckodriver-v0.24.0-linux64.tar.gz 
+```
+robo3t解压完成后，需要手动安装
 
+
+##  安装phamtomjs以及driver
+```shell
 wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
 tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2
 sudo cp phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/bin/
@@ -82,9 +88,26 @@ rm google-chrome-stable_current_amd64.deb chromedriver_linux64.zip geckodriver-v
 ## 可以在软件中心下载的
 软件中心的内容，可以用界面操作的方式安装，也可以用命令行的方式安装
 ```shell
-sudo snap 软件名字
+sudo snap install 软件名字
 ```
-  sublimeText 
-  pycharm    
-  notepad-plus-plus
-  redis-desktop-manager
+* pycharm    
+* notepad-plus-plus
+* redis-desktop-manager
+
+## 其他
+### 安装sublimetext3
+```shell
+wget  https://download.sublimetext.com/sublime_text_3_build_3207_x64.tar.bz2
+tar xvjf sublime_text_3_build_3207_x64.tar.bz2
+
+```
+### 与虚拟机共享文件夹
+ 直接设定共享文件夹 
+ 然后执行下面命令，添加用户权限，否则无法访问 
+ myname 是当前用户名 
+ ```sh
+ sudo sudo adduser myname vboxsf
+ ```
+ 共用剪切板和拖拽功能，在设置中设为双向就好 
+ 
+
