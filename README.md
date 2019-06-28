@@ -10,6 +10,7 @@ sudo apt-get install mongodb
 sudo apt-get install subverion
 sudo apt-get install git
 sudo apt-get install tree
+sudo apt-get install curl
 ```
 ## python工具
 ```shell
@@ -44,6 +45,8 @@ sudo apt-get install libxslt-dev libxml2-dev
 sudo apt-get install zlib1g-dev  #安装第三方包的依赖库
 sudo apt-get install libsqlite3-dev
 sudo apt-get install ruby
+gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable --rails
 sudo apt-get install ruby-dev
 sudo apt install ruby-bundler
 sudo gem install nokogiri
