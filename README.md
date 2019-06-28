@@ -79,4 +79,12 @@ sudo mv geckodriver /usr/local/bin/
 rm google-chrome-stable_current_amd64.deb chromedriver_linux64.zip geckodriver-v0.24.0-linux64.tar.gz
 ```
 
-
+## 可以在软件中心下载的
+软件中心的内容，可以用界面操作的方式安装，也可以用命令行的方式安装
+```shell
+sudo snap 软件名字
+```
+  sublimeText 
+  pycharm    
+  notepad-plus-plus
+  redis-desktop-manager
